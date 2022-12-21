@@ -14,7 +14,7 @@ const DUMMY_MEETUPS = [
     id: "m2",
     title: "Germany Meetup",
     image:
-      "https://www.britannica.com/topic/Neuschwanstein-Castle#/media/1/410798/96013",
+      "https://neuschwansteintickets.com/images/disney-castle-neuschwanstein.jpg",
     address: "Neuschwansteinstrane 20, 87645 Schwangau, Germany",
     description: "Meeting in the cafe of the Neuschwanstein Castle",
   },
@@ -30,7 +30,7 @@ const DUMMY_MEETUPS = [
     id: "m4",
     title: "Canary Islands Meetup",
     image:
-      "https://de.wikipedia.org/wiki/Papagayo-Strände#/media/Datei:Lanzarote_1_Luc_Viatour.jpg", //url, not file upload
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/ef/81/15.jpg",
     address: "Calle Punta de Papagayo, 13, 35580 Yaiza, Las Palmas, Spain",
     description: "Meeting in the Playa Blanca area",
   },
