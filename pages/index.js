@@ -6,7 +6,7 @@ const DUMMY_MEETUPS = [
     id: "m1",
     title: "Italy Meetup",
     image:
-      "https://en.wikipedia.org/wiki/Trevi_Fountain#/media/File:Fontana_di_Trevi_-_Rome,_Italy_-_November_6,_2010_(6212401026).jpg", //url, not file upload
+      "https://a.cdn-hotels.com/gdcs/production86/d278/b66ef277-f5ef-43c0-8aa3-aa0c9ed5b118.jpg?impolicy=fcrop&w=1600&h=1066&q=medium",
     address: "Piazza di Trevi, 00187 Roma RM, Italy",
     description: "Meeting on the right side of the Trevi Fountain.",
   },
@@ -14,8 +14,8 @@ const DUMMY_MEETUPS = [
     id: "m2",
     title: "Germany Meetup",
     image:
-      "https://en.wikipedia.org/wiki/Neuschwanstein_Castle#/media/File:Neuschwanstein_Castle_2.jpg", //url, not file upload
-    address: "Neuschwansteinstraße 20, 87645 Schwangau, Germany",
+      "https://www.britannica.com/topic/Neuschwanstein-Castle#/media/1/410798/96013",
+    address: "Neuschwansteinstrane 20, 87645 Schwangau, Germany",
     description: "Meeting in the cafe of the Neuschwanstein Castle",
   },
   {
