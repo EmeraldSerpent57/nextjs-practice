@@ -1,6 +1,7 @@
 // our-domain.com/
 import MeetupList from "../components/meetups/MeetupList";
 
+
 const DUMMY_MEETUPS = [
   {
     id: "m1",
@@ -15,7 +16,7 @@ const DUMMY_MEETUPS = [
     title: "Germany Meetup",
     image:
       "https://neuschwansteintickets.com/images/disney-castle-neuschwanstein.jpg",
-    address: "Neuschwansteinstrane 20, 87645 Schwangau, Germany",
+    address: "Neuschwansteinstrabe 20, 87645 Schwangau, Germany",
     description: "Meeting in the cafe of the Neuschwanstein Castle",
   },
   {
@@ -28,17 +29,45 @@ const DUMMY_MEETUPS = [
   },
   {
     id: "m4",
-    title: "Canary Islands Meetup",
+    title: "Spain Meetup",
     image:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/ef/81/15.jpg",
     address: "Calle Punta de Papagayo, 13, 35580 Yaiza, Las Palmas, Spain",
-    description: "Meeting in the Playa Blanca area",
+    description: "Meeting in the Playa Blanca area, in the Canary Islands",
   },
 ];
-function HomePage() {
+
+
+function HomePage(props) {
   return (
-      <MeetupList meetups={DUMMY_MEETUPS} />
+      <MeetupList meetups={props.meetups} />
   );
 }
+
+/* Server-side Rendering example ONLY, not used here
+export async function getServerSideProps(context) {
+  const req = context.req;
+  const res = context.res;
+
+  // fetch data from API
+
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS,
+    },
+  };
+};  */
+
+//this only works in your "page" component files, no other files 
+export async function getStaticProps() {
+  //fetch data from API
+  return {
+    props: {
+      meetups: DUMMY_MEETUPS,
+    },
+    revalidate: 3600,
+  };
+};
+
 
 export default HomePage;
