@@ -1,7 +1,9 @@
 // our-domain.com/
+
+import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList";
 
-
+/*
 const DUMMY_MEETUPS = [
   {
     id: "m1",
@@ -36,13 +38,48 @@ const DUMMY_MEETUPS = [
     description: "Meeting in the Playa Blanca area, in the Canary Islands",
   },
 ];
-
+*/
 
 function HomePage(props) {
   return (
       <MeetupList meetups={props.meetups} />
   );
 }
+
+//this only works in your "page" component files, no other files 
+export async function getStaticProps() {
+  //fetch data from API
+
+  const client = await MongoClient.connect(
+    "mongodb+srv://A57c1992:A57c1992@cluster0.esg3msz.mongodb.net/meetups?retryWrites=true&w=majority"
+  ); //never run this on the client side!!!
+  const db = client.db();
+
+  const meetupsCollection = db.collection("meetups");
+
+  const meetups = await meetupsCollection.find().toArray();   //finds and fetches data from mongodb and arranges in to an array     
+
+  client.close();   //will close database when its done
+
+  return {
+    props: {
+      meetups: meetups.map(meetup => ({
+        title: meetup.title,
+        address: meetup.address,
+        image: meetup.image,
+        id: meetup._id.toString(),
+      })),
+    },
+    revalidate: 3600,
+  };
+};
+
+
+export default HomePage;
+
+
+
+
 
 /* Server-side Rendering example ONLY, not used here
 export async function getServerSideProps(context) {
@@ -57,17 +94,3 @@ export async function getServerSideProps(context) {
     },
   };
 };  */
-
-//this only works in your "page" component files, no other files 
-export async function getStaticProps() {
-  //fetch data from API
-  return {
-    props: {
-      meetups: DUMMY_MEETUPS,
-    },
-    revalidate: 3600,
-  };
-};
-
-
-export default HomePage;
