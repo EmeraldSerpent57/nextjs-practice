@@ -1,6 +1,6 @@
 # DISCLAIMER: All meetups are fictional!
 
-### Web App build with NextJS, MongoDB database, and deployed with Vercel
+### Web App built with NextJS, MongoDB database, and deployed with Vercel
   *See instructions below to get started with NextJS*
   
 ## Things I would like to add to this app:
@@ -8,7 +8,9 @@
 2. Disclaimer at bottom of homepage
 3. Ability to add a date when setting a new meetup
 4. Pop up message that says "Thank you for creating a new meetup" after you add a new meetup, before it redirects to the homepage
-
+5. Add "cancel" button on the add meetup page
+6. Option to add comments/more details to the "show details page"
+7. "back" button on the show details page that will take you back to all meetups 
 
 
 
