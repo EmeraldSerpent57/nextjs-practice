@@ -1,15 +1,26 @@
 // our-domain.com/
 
+import Head from "next/head";
 import { MongoClient } from "mongodb";
 import MeetupList from "../components/meetups/MeetupList";
+import { Fragment } from "react";
 
 function HomePage(props) {
   return (
+    <Fragment>
+      <Head>
+        <title>React World Meetups</title>
+        <meta
+          name="description"
+          content="Browse a list of meetups across the world where we can share our love of React in beautiful places!"
+        />
+      </Head>
       <MeetupList meetups={props.meetups} />
+    </Fragment>
   );
 }
 
-//this only works in your "page" component files, no other files 
+//this only works in your "page" component files, no other files
 export async function getStaticProps() {
   //fetch data from API
 
@@ -20,13 +31,13 @@ export async function getStaticProps() {
 
   const meetupsCollection = db.collection("meetups");
 
-  const meetups = await meetupsCollection.find().toArray();   //finds and fetches data from mongodb and arranges in to an array     
+  const meetups = await meetupsCollection.find().toArray(); //finds and fetches data from mongodb and arranges in to an array
 
-  client.close();   //will close database when its done
+  client.close(); //will close database when its done
 
   return {
     props: {
-      meetups: meetups.map(meetup => ({
+      meetups: meetups.map((meetup) => ({
         title: meetup.title,
         address: meetup.address,
         image: meetup.image,
@@ -35,11 +46,9 @@ export async function getStaticProps() {
     },
     revalidate: 3600,
   };
-};
-
+}
 
 export default HomePage;
-
 
 /*
 const DUMMY_MEETUPS = [
@@ -77,7 +86,6 @@ const DUMMY_MEETUPS = [
   },
 ];
 */
-
 
 /* Server-side Rendering example ONLY, not used here
 export async function getServerSideProps(context) {
