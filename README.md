@@ -7,8 +7,6 @@
 1. More generic homepage with description of purpose of meetups
 2. Disclaimer at bottom of homepage
 3. Format the way the date is displayed! 
-4. Pop up message that says "Thank you for creating a new meetup" after you add a new meetup with an 'ok' button that will redirect to the homepage
-5. Add "cancel" button on the add meetup page
 6. Option to add comments/more details to the "show details page"  
 
 
