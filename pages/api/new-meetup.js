@@ -9,7 +9,7 @@ async function handler(req, res) {
     if (req.method === 'POST') {
         const data = req.body;        //contains the data of the incoming request
 
-        const { title, image, address, description } = data;            //data expected to get on the incoming request body
+        const { title, image, address, description, date } = data;            //data expected to get on the incoming request body
 
         const client = await MongoClient.connect('mongodb+srv://A57c1992:A57c1992@cluster0.esg3msz.mongodb.net/meetups?retryWrites=true&w=majority');       //never run this on the client side!!!
         const db = client.db();

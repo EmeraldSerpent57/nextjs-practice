@@ -18,6 +18,7 @@ function MeetupDetails(props) {
       <MeetupDetail
         image={props.meetupData.image}
         title={props.meetupData.title}
+        date={props.meetupData.date}
         address={props.meetupData.address}
         description={props.meetupData.description}
       />
@@ -73,6 +74,7 @@ export async function getStaticProps(context) {
         address: selectedMeetup.address,
         image: selectedMeetup.image,
         description: selectedMeetup.description,
+        date: selectedMeetup.date,
       },
     },
   };

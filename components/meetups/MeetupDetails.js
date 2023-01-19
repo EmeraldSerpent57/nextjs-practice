@@ -8,7 +8,8 @@ function MeetupDetail(props) {
         alt={props.title}
       />
       <h1>{props.title}</h1>
-      <address>{props.address}</address>
+      <h4>When: {props.date}</h4>
+      <address>Where: {props.address}</address>
       <p>{props.description}</p>
     </section>
   );
