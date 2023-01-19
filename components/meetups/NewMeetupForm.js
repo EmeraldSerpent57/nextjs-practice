@@ -1,9 +1,15 @@
-import { useRef,  } from "react";
+import { useRef } from "react";
+import { Router, useRouter } from "next/router";
 
 import Card from "../ui/Card";
 import classes from "./NewMeetupForm.module.css";
 
 function NewMeetupForm(props) {
+  const router = useRouter();
+  const cancelHandler = () => {
+    router.push("/");
+  };
+
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -63,6 +69,7 @@ function NewMeetupForm(props) {
           ></textarea>
         </div>
         <div className={classes.actions}>
+          <button onClick={cancelHandler}>Cancel</button>
           <button>Add Meetup</button>
         </div>
       </form>
