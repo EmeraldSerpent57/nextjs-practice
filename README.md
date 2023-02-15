@@ -4,10 +4,9 @@
   *See instructions below to get started with NextJS*
   
 ## Things I would like to add to this app:
-1. More generic homepage with description of purpose of meetups - should this be in the pages??
-2. Disclaimer at bottom of homepage
-3. Format the way the date is displayed! 
-6. Option to add comments/more details to the "show details page"  
+1. Add About Us page with description of purpose of meetups -- belongs in pages?
+2. Format the way the date is displayed! 
+3. Option to add comments/more details to the "show details page"  
 
 
 

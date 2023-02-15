@@ -17,3 +17,26 @@ h5,
 h6 {
   font-family: 'Lato', sans-serif;
 }
+
+.header h1 {
+  margin-left: -7rem;
+  margin-right: -10rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.disclaimer {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: red;
+}
+
+.footer p {
+  color: black;
+  font-size: 0.7rem;
+  text-align: right;
+  margin-right: -15rem;
+  margin-bottom: -2rem;
+}
