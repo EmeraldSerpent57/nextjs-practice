@@ -24,7 +24,7 @@ function HomePage(props) {
       <MeetupList meetups={props.meetups} />
       <p className="disclaimer">Disclaimer: All meetups are fictional.</p>
       <footer className="footer">
-        <p class="copy">
+        <p>
           Made with &#x2661; by 
           <Link
             href="https://www.linkedin.com/in/alaina-harrison-48a4a81b7/"

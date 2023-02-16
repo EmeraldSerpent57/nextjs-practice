@@ -18,6 +18,7 @@ function MeetupDetail(props) {
       </section>
       <footer className={classes.btn}>
         <button onClick={goBackHandler}>Back</button>
+        <p className="disclaimer">Disclaimer: All meetups are fictional.</p>
       </footer>
     </>
   );

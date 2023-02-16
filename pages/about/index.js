@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { Fragment } from "react";
+import AboutUs from "../../components/about/AboutUs";
 
 function AboutUsPage() {
     return (
@@ -9,7 +10,7 @@ function AboutUsPage() {
           <title>About Us</title>
           <meta name="description" content="More about React World Meetups" />
         </Head>
-        <div>This will be all about us</div>
+        <AboutUs />
       </Fragment>
     );
 }

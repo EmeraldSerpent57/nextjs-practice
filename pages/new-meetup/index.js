@@ -33,6 +33,7 @@ function NewMeetupPage() {
           />
         </Head>
         <NewMeetupForm onAddMeetup={addMeetupHandler} />
+        <p className="disclaimer">Disclaimer: All meetups are fictional.</p>
       </Fragment>
     );
 };
