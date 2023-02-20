@@ -12,19 +12,37 @@ function ContactForm() {
 
   return (
     <Card>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email Address</label>
-        <input id="email" type="email" name="email" />
-        <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <textarea id="message" name="message" />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
-        />
-        <button type="submit" disabled={state.submitting}>
-          Submit
-        </button>
+      <form className={classes.form} onSubmit={handleSubmit}>
+        <div className={classes.control}>
+          <label htmlFor="email">Email Address</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+          />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </div>
+        <div className={classes.control}>
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            cols="50"
+            rows="10"
+            placeholder="Enter Your Message"
+          />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
+        </div>
+        <div className={classes.actions}>
+          <button type="submit" disabled={state.submitting}>
+            Submit
+          </button>
+        </div>
       </form>
     </Card>
   );

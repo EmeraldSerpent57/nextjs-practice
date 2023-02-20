@@ -21,7 +21,10 @@ function AboutUs() {
           <h3>About the creator...</h3>
           <p>(This will be about me?)</p>
         </div>
-        <App />
+        <div>
+          <h3>Contact Us</h3>
+          <App />
+        </div>
         <footer className="footer">
           <p>
             Made with &#x2661; by
