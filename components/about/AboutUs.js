@@ -1,12 +1,12 @@
 import Link from "next/link";
 import classes from './AboutUs.module.css';
 
-import ContactForm from "./ContactForm";
+import App from "./ContactForm";
 
 function AboutUs() {
     return (
       <>
-        <header>
+        <header className="header">
           <h1>Learn About React World Meetups</h1>
         </header>
         <div>
@@ -21,7 +21,7 @@ function AboutUs() {
           <h3>About the creator...</h3>
           <p>(This will be about me?)</p>
         </div>
-        <ContactForm />
+        <App />
         <footer className="footer">
           <p>
             Made with &#x2661; by
