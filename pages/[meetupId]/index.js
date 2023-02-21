@@ -5,7 +5,6 @@ import { Fragment } from "react";
 import MeetupDetail from "../../components/meetups/MeetupDetails";
 
 function MeetupDetails(props) {
-  
   return (
     <Fragment>
       <Head>
