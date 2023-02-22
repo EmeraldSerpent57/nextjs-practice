@@ -37,3 +37,12 @@
 .header a.active {
   color: white;
 }
+
+@media  screen and (max-width: 1024px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .header a {
+    font-size: 1rem;
+  }
+}

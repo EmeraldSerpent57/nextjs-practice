@@ -53,3 +53,25 @@
     text-align: center;
     font-size: 1.7rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .body {
+    width: 100%;
+    margin-left: 0;
+  }
+  .header {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.4rem;
+  }
+  .sectionHeader {
+    font-size: 1.7rem;
+  }
+  .section img {
+    width: 60%;
+    height: 300px;
+  }
+  .section p {
+    font-size: .95rem;
+  }
+}

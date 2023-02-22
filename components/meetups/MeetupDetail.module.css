@@ -1,5 +1,6 @@
 .detail {
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .detail img {
@@ -25,4 +26,13 @@
 .btn button:hover,
 .btn button:active {
   background-color: #ffe2ed;
+}
+
+@media screen and (max-width: 1024px) {
+  .detail {
+    font-size: 1rem;
+  }
+  .btn {
+    margin-top: 0.5rem;
+  }
 }
