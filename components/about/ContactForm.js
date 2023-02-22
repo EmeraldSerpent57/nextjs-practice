@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import classes from './ContactForm.module.css';
 
 import React from "react";
