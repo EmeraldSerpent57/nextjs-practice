@@ -39,7 +39,7 @@ function ContactForm() {
         </div>
         <div className={classes.actions}>
           <button type="submit" disabled={state.submitting}>
-            <img src="/sending.png" alt="Submit" />
+            <img src="/paper-plane.png" alt="Submit" />
           </button>
         </div>
       </form>

@@ -28,8 +28,8 @@
 }
 
 .actions img {
-  width: 3rem;
-  height: 3rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .actions button {
@@ -37,7 +37,7 @@
   cursor: pointer;
   background-color: #ffffff;
   color: #77002e;
-  padding: 0.1rem 1rem;
+  padding: 0.3rem 1rem;
   border: 1px solid #77002e;
   border-radius: 4px;
   font-weight: bold;
@@ -45,6 +45,6 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #a50e48;
-  border-color: #a50e48;
+  background-color: #66a3ff;
+  border-color: #66a3ff;
 }
