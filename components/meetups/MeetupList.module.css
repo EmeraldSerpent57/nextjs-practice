@@ -3,3 +3,23 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    }
+  .list::-webkit-scrollbar {
+    width: 8px;
+    }
+  .list::-webkit-scrollbar-track {
+    background: #ffe2ed;
+    }
+  .list::-webkit-scrollbar-thumb {
+    background-color: #77002e;
+    border-radius: 20px;
+    border: 3px solid #77002e;
+   }
+}

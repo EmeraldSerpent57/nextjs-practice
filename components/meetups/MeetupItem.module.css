@@ -44,3 +44,10 @@
 .actions button:active {
   background-color: #ffe2ed;
 }
+
+@media screen and (max-width: 1024px) {
+  .item {
+    display: inline-block;
+    margin: .5rem;
+  }
+}
