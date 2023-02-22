@@ -11,7 +11,6 @@ function ContactForm() {
   };
 
   return (
-    <Card>
       <form className={classes.form} onSubmit={handleSubmit}>
         <div className={classes.control}>
           <label htmlFor="email">Email Address</label>
@@ -40,13 +39,13 @@ function ContactForm() {
         </div>
         <div className={classes.actions}>
           <button type="submit" disabled={state.submitting}>
-            Submit
+            <img src="/sending.png" alt="Submit" />
           </button>
         </div>
       </form>
-    </Card>
   );
 }
+
 function App() {
   return <ContactForm />;
 }
