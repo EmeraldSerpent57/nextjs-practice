@@ -41,7 +41,7 @@ function AboutUs() {
           </div>
           <h3 className={classes.sectionHeader}>About the creator...</h3>
           <div className={classes.section}>
-            <img src="/IMG_1210 2.jpg" alt="Alaina Harrison" />
+            <img src="/IMG_1211.jpg" alt="Alaina Harrison" />
             <p>
               Alaina Harrison is a front-end developer with a passion for all
               things React! She built this site as a re-creation of a React
