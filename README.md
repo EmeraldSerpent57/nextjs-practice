@@ -9,7 +9,7 @@ This web app is a place for all React developers to find a local social meetup t
 - React and Next.js
 - MongoDB - API
 - Flat-Icon
-- React Helmet for managing my document head
+- React Helmet - for managing my document head
 - Vercel - deployment
 - Formspree - for contact form
   
