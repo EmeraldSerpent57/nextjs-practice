@@ -16,7 +16,7 @@ This web app is a place for all React developers to find a local social meetup t
 <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Tanah Basah - Flaticon</a>
 
 ## Launch
-Visit this site: [React World Meetups] (rhttps://react-world-meetups-nextjs.vercel.app)
+Visit this site: [React World Meetups] (https://react-world-meetups-nextjs.vercel.app)
 
 *See instructions below to get started with NextJS*
 #### Getting Started
